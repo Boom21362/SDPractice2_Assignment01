@@ -21,7 +21,7 @@ h2 {
 
 .dog-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 500px); /* 2 columns */
+  grid-template-columns: repeat(3, 500px); /* 2 columns */
   gap: 20px; /* space between photos */
   justify-items: center;
 }
