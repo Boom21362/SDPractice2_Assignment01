@@ -34,7 +34,7 @@ h2 {
   color: darkblue;
 }
 
-h3 {
+.petName {
   margin: 1px;
   border: solid;
   font-size: xx-large;
@@ -85,4 +85,28 @@ dd {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+}
+
+#adoptform{
+  font-size: 35px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"]{
+  width: 400px;       /* controls horizontal size */
+  height: 40px;       /* controls vertical size */
+  font-size: 30px;    /* makes the text inside larger */
+  padding: 8px;       /* adds space inside the box */
+  border-radius: 5px; /* optional: rounded corners */
+  border: 1px solid #ccc;
+}
+
+select {
+  width: 420px;
+  height: 45px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
 }

@@ -1,15 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-         <meta charset="UTF-8" />
+        <meta charset="UTF-8" />
         <title>AdoptMe</title>
         <link rel="stylesheet" href="style/index.css" />
     </head>
     <body>
         <h1>HomeForme</h1>
         <h2 style="text-align: left">Adoption Form</h2>
-        <div>
+        <form id= "adoptform">
+            <h3 class="adoptHead" style="font-size: 50px">Adopter Personal Info:</h3>
+            <label for="names">Firstname & Lastname: </label>
+            <input type="text" id="names" name="names" required /><br /><br />
+            <label for="tel">Telephone Number: </label>
+            <input type="tel" id="tel" name="tel" required/> <br />
+            <br />
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required/>
+
+            <h3 class="adoptHeader" style="font-size: 50px">Adopter Envoirment Info:</h3>
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address" required/><br /><br />
+
+            <label for="houseType">Choose a house type:</label>
+            <select id="houseType" name="houseType" required>
+                <option value="" disabled selected>Select a house type...</option>
+                <option value="gardenHouse">Garden House</option>
+                <option value="singleHouse">Single House</option>
+                <option value="townHouse">TownHouse</option>
+                <option value="apartment">Condominium/Apartment</option>
+            </select>
+            <br><br>
+            <input type="radio" style="transform: scale(1.5); margin-right: 10px;" value="petting">
+            <label for="petting">Inside Petting</label>
+            <input type="radio" style="transform: scale(1.5); margin-right: 10px;" value="petting">
+            <label for="petting"> Outside Petting</label> <br><br>
+            <label for="amount">Amount of owned pets: </label>
+            <input type="number" id="amount" name="amount" required/><br /><br />
+            <input type="checkbox" style="transform: scale(1.5); margin-right: 10px;"> Submitting this form is an expression of interest and *does not* guarantee the adoption of the dog.
             
-        </div>
+            <br><br>
+            <input type="submit" style="width: 200px; height: 100px; font-size: 30px; padding: 10px 0;cursor: pointer;" value="Submit" />
+        </form>
     </body>
 </html>
